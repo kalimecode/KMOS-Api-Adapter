@@ -9,20 +9,20 @@
 Откройте в браузере:
 http://<IP-адрес-сервера>:81/
 
-## Получить все данные одним запросом
+#### Получить все данные одним запросом
 curl -s http://localhost:81/api/getAll | jq .
-# Температура с датчиков
+#### Температура с датчиков
 
 curl -s http://localhost:81/api/getSensors | jq .
 
-# Данные блока БГЕ
+#### Данные блока БГЕ
 curl -s http://localhost:81/api/getBGE | jq .
 
-# Информация о камере
+#### Информация о камере
 curl -s http://localhost:81/api/camera | jq .
 
-# Статус системы
+#### Статус системы
 curl -s http://localhost:81/api/status | jq .
 
-# Скачать изображение с камеры
+#### Скачать изображение с камеры
 curl -O http://localhost:81/camera/lastest.png
